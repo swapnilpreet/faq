@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&display=swap');
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+main{
+  display: grid;
+  background: #1c92d2;
+  background: -webkit-linear-gradient(to top, #1c92d2, #f2fcfe);
+  background: linear-gradient(to top, #1c92d2, #f2fcfe);
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  grid-template-rows: 50px 93%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+nav{
+  grid-column: 1/-1;
+}
+section{
+  grid-column: 1/1;
+}
+
+
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border-bottom: 1px solid #1075ac;
+}
+
+.navbar div{
+  height: 100%;
+  display: flex;
+  width:  100%;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.icons{
+  display: flex;
+  gap: 35px;
+  color: #1075ac;
+}
+.logos-cen{
+  color: #1075ac;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn{
+  display: flex;
+}
+.btn button{
+  width: 30%;
+  padding: 0.5rem;
+  background-color:#f2fcfe;
+  border-radius: 12rem;
+  border: 2px solid #1075ac;
+  color: #1075ac;
+  font-weight: 500;
+  font-size: larger;
+}
+
+
+
+
+.section {
+  display: flex;
+  justify-content: end;
+  padding-top: 11.7rem;
+}
+
+.center {
+  text-align: right;
+}
+
+.center i {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+ 
+.icon {
+  color: rgb(36, 29, 29);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon.active {
+  color:#1c92d2;
+  font-size: larger;
+  font-weight: 800;
+  transition: color 0.5s ease;
+}
+
+
+
+
+
+
+.section-Middle{
+  grid-row: 2;
+  grid-column: 2/3;
+}
+
+
+.headings h2{
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+ 
+.headings{
+  text-align: center;
+}
+
+.input-btn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 40px; 
+  margin-bottom: 20px;
+}
+
+.input-btn input{
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px dashed #1c92d2;
+  color: #1c92d2;
+}
+
+span {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+p{
+  margin: auto;
+  color:rgb(36, 35, 35);
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.middle-tabs{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.tabs-flex{
+  display: flex;
+}
+
+
+
+
+.faqs{
+  height: 100%;
+  padding: 2px;
+}
+.faqs-div{
+  overflow: scroll;
+  height: 580px;
+}
+
+
+
+.empty{
+  display: flex;
+  justify-content: center;
+}
+.empty-main{
+  margin: auto;
+  text-align: center;
+  color: #f2f5fe;
+}
+
+.empty-main p{
+  font-size: larger;
+}
+
+
+.qna {
+  border: 2px solid #d7dcdf;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  position: relative;
+  border-radius: 12px;
+  overflow: scroll;
+  background: #48a9dc;
+  
+}
+
+.red:hover{
+  color: red;
+}
+
+.green:hover{
+  color: rgb(15, 236, 15);
+}
+
+
+@media screen and (max-width: 768px) {
+  main{
+    grid-template-rows: 150px;
+  }
+  
+  nav{
+    grid-column: 1/-1;
+    
+  }
+  section{
+    grid-column: 1/1;
+  }
+  .section {
+    display: flex;
+    justify-content: end;
+    padding-top: 13.5rem;
+  }
+  .section-Middle{
+    grid-row: 2;
+    grid-column: 2/-1;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn button {
+    width: 20%;
+    padding: 0.5rem 0;
+  }
+  .icon.active {
+    color:#1c92d2;
+    font-size: larger;
+    font-weight: 500;
+  }
+  h1{
+    margin: 0%;
+  }
+}
+
+@media screen and (min-width: 768px)and (max-width:1168px) {
+  main{
+    grid-template-rows: 150px;
+  }
+  
+  nav{
+    grid-column: 1/-1;
+    
+  }
+  section{
+    grid-column: 1/1;
+  }
+  .section {
+    display: flex;
+    justify-content: end;
+    padding-top: 11.6rem;
+  }
+  .section-Middle{
+    grid-row: 2;
+    grid-column: 2/-1;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn button {
+    width: 15%;
+    padding: 0.5rem 0;
+  }
+  .icon.active {
+    color:#1c92d2;
+    font-size: larger;
+    font-weight: 500;
+  }
+  h1{
+    margin: 0%;
+  }
+}
+
